@@ -1,0 +1,32 @@
+# Environment files containing project-specific URIs or local secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments & caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Packaging & build artifacts
+build/
+dist/
+*.egg-info/
+
+# Terraform local state & provider caches
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/*.tfvars
+!**/*.tfvars.example
+
+# IDE & OS metadata
+.vscode/
+.idea/
+.DS_Store
+deployment_metadata.json
